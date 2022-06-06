@@ -15,4 +15,11 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function test_BasicTest()
+    {
+        $response = $this->get('/');
+        // 200でパスするケースを失敗するよう編集
+        $response->assertStatus(300);
+    }
 }
