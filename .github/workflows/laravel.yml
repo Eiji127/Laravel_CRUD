@@ -27,5 +27,5 @@ jobs:
         DB_PORT: 8889
         DB_DATABASE: sample2
         DB_USERNAME: root
-        DB_PASSWORD: "root"
+        DB_PASSWORD: root
       run: vendor/bin/phpunit
