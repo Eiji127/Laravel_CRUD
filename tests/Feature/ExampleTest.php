@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Models\Item;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
@@ -17,5 +18,11 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
+    }
+
+    public function test_the_app_fetches_data_successfully()
+    {
+        $items = Item::all();
+        $this->assertEquals($items[0]->name, 'Eiji');
     }
 }
