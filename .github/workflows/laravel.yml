@@ -29,7 +29,7 @@ jobs:
       env:
         DB_CONNECTION: mysql
         DB_TEST_HOST: 127.0.0.1
-        DB_TEST_PORT: 3306
+        DB_TEST_PORT: 8889
         DB_TEST_DATABASE: sample2
         DB_TEST_USERNAME: root
         DB_TEST_PASSWORD: root
